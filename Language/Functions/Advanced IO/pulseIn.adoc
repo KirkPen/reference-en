@@ -35,7 +35,7 @@ The timing of this function has been determined empirically and will probably sh
 
 `value`: type of pulse to read: either link:../../../variables/constants/constants/[HIGH] or link:../../../variables/constants/constants/[LOW]. (int)
 
-`timeout` (optional): the number of microseconds to wait for the pulse to start; default is one second (unsigned long)
+`timeout` (optional): the number of microseconds to wait for the complete pulse to be received within the timeout, or gives up and returns 0.; default is one second (unsigned long)
 [float]
 === Returns
 the length of the pulse (in microseconds) or 0 if no pulse started before the timeout (unsigned long)
